@@ -6,7 +6,7 @@
 
 2. Predicting Success Rate of Kickstarter Projects
 
-3. This application is intended for entrepreneurs and small companies who want a review of their project proposal. Crystal will predict whether a Kickstarter idea will succeed or fail, then generate a statistical report for users to view the positive and negative factors that led to the end result. If the project is even a dollar short of its goal by the end of the term, Kickstarter will not release the funds for that project. Users can use Crystal's report to fix the negative factors of their idea to increase their success rate which essentially saves them time. 
+3. This application is intended for entrepreneurs who want a review of their project proposal and investors looking to help sponsor a project. Crystal will predict whether a Kickstarter idea will succeed or fail, then generate a statistical report for users to view the positive and negative factors that led to the end result. If the project is even a dollar short of its goal by the end of the term, Kickstarter will not release the funds for that project. Businesses can use Crystal's report to fix the negative factors of their idea, increase their success rate, and save time. Investors will also be more at ease when they know their contribution will be going towards a meaningful and innovative idea. 
 
 4. Technology stack: AWS, DynamoDB, Django, Python, JS, HTML/CSS
 
