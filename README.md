@@ -13,11 +13,11 @@
 
 ## Project Idea-2
 
-1. Project Title
+1. What's trending
 
-2. Project idea description
+2. Acquire data from the top trending Youtube videos from different countries to form visual statistics of what category is the most viewed video.
 
-3. Goal of the project (who are you developing the project for)
+3. 
 
 4. Technology stack
 
