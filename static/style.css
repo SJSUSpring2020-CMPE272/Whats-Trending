@@ -24,6 +24,7 @@ div.plots-hrs .mpld3-yaxis .tick, div.plots-tags .mpld3-yaxis .tick{
 
 
 .index-img {
+  margin-left: 100px;
   opacity: 1;
   display: block;
   max-width: 60% !important; 
@@ -31,19 +32,6 @@ div.plots-hrs .mpld3-yaxis .tick, div.plots-tags .mpld3-yaxis .tick{
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
-/* .middle {
-  color: red;
-  font-size: 30px;
-  transition: .5s ease;
-  opacity: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-} */
 
 .middle {
   font-size: 20px;
