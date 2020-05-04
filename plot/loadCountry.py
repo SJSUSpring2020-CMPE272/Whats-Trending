@@ -35,7 +35,7 @@ def getCategoryDesc(country):
 def getPublishHour(country):
     description = ''
     if (country == "US"):
-        description = 'Videos published at 4:00PM hour are the most trending in US'
+        description = 'Videos published at 3:00PM hour are the most trending in US'
     elif (country == "CA"):
         description = 'Videos published at 4:00PM are the most trending in CA'
     elif (country == "UK"):
@@ -45,7 +45,7 @@ def getPublishHour(country):
     elif (country == "DE"):
         description = 'Videos published at 5:00PM are the most trending in DE'
     elif (country == "MX"):
-        description = 'Videos published at 5:00PM are the most trending in MX'
+        description = 'Videos published at 2:00AM are the most trending in MX'
     return description
 
 
