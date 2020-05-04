@@ -49,6 +49,10 @@ def getPublishHour(country):
     return description
 
 
-
+def getTagCounts(country):
+    description = ''
+    if (country == "US"):
+        description = 'The relation between number of tags in the video versus its trending level'
+    return description
 
 

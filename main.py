@@ -42,7 +42,7 @@ def load_country_func(country):
 def showCategory(country):
     df = loadCountry.getCountryData(country)
     desc = loadCountry.getCategoryDesc(country)
-    if (country == "US" or country == "MX"):
+    if (country == "US"):
         html_graph = [(showTrending.plot_title(df), "cat")]
     else:
         html_graph = [(showTrending.plot_category(df), "cat")]
@@ -68,7 +68,8 @@ def showPublishHour(country):
 def showTagCount(country):
     df = loadCountry.getCountryData(country)
     html_graph = [showTrending.plot_tags(df)]
-    return render_template("tagCount.html", title="Tag count", graph=html_graph, analysis='', country=country)
+    desc = loadCountry.getTagCounts(country)
+    return render_template("tagCount.html", title="Tag count", graph=html_graph, analysis=desc, country=country)
 
 
 if __name__ == '__main__':
