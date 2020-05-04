@@ -42,11 +42,11 @@ def load_country_func(country):
 def showCategory(country):
     df = loadCountry.getCountryData(country)
     desc = loadCountry.getCategoryDesc(country)
-    if (country == "US" or country == "MX"):
+    if (country == "US"):
         html_graph = [(showTrending.plot_title(df), "cat")]
     else:
         html_graph = [(showTrending.plot_category(df), "cat")]
-    return render_template("category.html", title="Category", graph=html_graph, analysis=desc, country=country)
+    return render_template("category.html", title=country, graph=html_graph, analysis=desc, country=country)
 
 
 @app.route("/countries/<country>/wordTags")
@@ -61,14 +61,15 @@ def showPublishHour(country):
     df = loadCountry.getCountryData(country)
     desc = loadCountry.getPublishHour(country)
     html_graph = [showTrending.plot_publish_hours(df)]
-    return render_template("publishHour.html", title="Publish Hour", graph=html_graph, analysis=desc, country=country)
+    return render_template("publishHour.html", title=country, graph=html_graph, analysis=desc, country=country)
 
 
 @app.route("/countries/<country>/tagCount")
 def showTagCount(country):
     df = loadCountry.getCountryData(country)
     html_graph = [showTrending.plot_tags(df)]
-    return render_template("tagCount.html", title="Tag count", graph=html_graph, analysis='', country=country)
+    desc = loadCountry.getTagCounts(country)
+    return render_template("tagCount.html", title=country, graph=html_graph, analysis=desc, country=country)
 
 
 if __name__ == '__main__':

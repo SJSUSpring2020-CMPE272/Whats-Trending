@@ -34,9 +34,12 @@
        </div>
 
         <nav class="navbar">
-           {% if country %}
            <h3>
-               <a href="/" style="color: white">Home</a> |
+                {% if title != "Home" %}
+               <a href="/" style="color: white">Home</a>
+                {% endif %}
+                {% if country %}
+                 |
                <a href="{{ url_for('countries_func') }}" style="color: white">Countries</a>  |
                  Trends by :
                <a href="{{ url_for('showCategory', country=country) }}" style="color: white"> Category</a> |
@@ -46,8 +49,9 @@
                     |
                    <a href="{{ url_for('showTagCount', country=country) }}" style="color: white"> Tag Count</a>
                 {% endif %}
+                {%  endif %}
            </h3>
-           {%  endif %}
+
         </nav>
 </div>
 {% endblock %}

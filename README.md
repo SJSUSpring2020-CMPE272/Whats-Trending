@@ -1,12 +1,23 @@
 # **What's Trending?**
-## **Description**
-#### **Idea Description:** 
-What's trending is intended to help Youtubers in different regions of the country visualize what type of content is the most popular in their country. Our team will acquire data from the top trending Youtube videos from different countries to form visual statistics of what category is the most viewed video.<br>
+## **Abstract**
+What's trending is intended to help Youtubers from different countries to visualize what type of video content is the most popular in their country. Our team acquired data from the top trending Youtube videos from different countries and formed visual statistics of popular video categories, popular video tags and favorable hours to publish videos. Our team has built a webpage where the user can provide a video id as input and can get to know the polarity of the video. The polarity is identified by performing sentiment analysis on the video comments at the back end. The youtubers can make use of this information to create video contents with more awareness of the audience's interests.
 
-#### **Goal of the project:**
-The goal of this project will be to present live data from Youtube's top trending video to help new content creators that would like to use this platform. We will build a website that will show the most viewed, liked, disliked, and comment counts in a visual representation for users that would like information on how to build their Youtube career in their desginated country. Our team will also build a sentiment analysis in a variety of forms to determine how the viewers of these videos felt, whether it be positive, negative, or neutral.
-Technology stack: Flask, AWS, Machine Learning algorithm(NLTK SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, JSON, HTML/CSS, Bootstrap
 
+## **Architecture Diagram**
+![Architecture Diagram](https://github.com/SJSUSpring2020-CMPE272/Whats-Trending/blob/develop/Final%20Architecture.png)
+
+
+## **Technology Stack**
+Github, Flask, AWS, Docker, Nginx, Youtube Data API v3, Machine Learning algorithm (NLTK Vader SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, HTML/CSS, Bootstrap
+
+
+## **View website**
+The docker daemon is running the website on the AWS EC2 Instance. The webpage will be viewable at the Elastic IP 52.88.197.158:80 
+```
+52.88.197.158:80
+```
+
+# **Notes for Team Members**
 
 ## **Set up virtual environment**
 This contains all the packages and dependencies used. 
@@ -18,14 +29,6 @@ venv\Scripts\activate
 If you don't need view website on localhost anymore, deactivate the virtual environment. 
 ```
 deactivate
-```
-
-
-## **View website**
-Now that the virtual environment is activated, you can run view the website on localhost:5000. 
-```
-python3 main.py
-python main.py
 ```
 
 ## Build & Run Docker Image 
@@ -51,5 +54,14 @@ means host's port and the right value is the container's port. By default, the c
 docker run -p 80:80 myapp
 ```
 
-## **Resources**
-[Modify & Redeploy Cloud Foundry App](https://cloud.ibm.com/docs/starters?topic=starters-download-modify-and-redeploy-your-cloud-foundry-app-with-the-command-line-interface)
+## To get the client_secrets.json
+1. Go to [Google Cloud Console](https://console.cloud.google.com) and create a new project. 
+2. Enable the YouTube Data API v3.
+3. Create credentials (OAuth client ID, Application Type: Other) and download them to `client_secrets.json`.
+4. Place the downloaded `client_secrets.json` under the main package WhatsTrendingApp
+
+## **References:**
+1. [Modify & Redeploy Cloud Foundry App](https://cloud.ibm.com/docs/starters?topic=starters-download-modify-and-redeploy-your-cloud-foundry-app-with-the-command-line-interface)
+2. [Johnafish/senticomment](https://github.com/johnafish/senticomment)
+3. [Webpage Icons](https://www.flaticon.com/packs/survey-feedback-2)
+4. [uWSGI-Nginx-Flask Docker Image](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/)

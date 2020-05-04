@@ -10,7 +10,7 @@
 </br>
 <h2 align="center", class="description">
     Our application is intended to help Youtubers across the world visualize the type of content that is most popular in their country.
-    The team has acquired data of top trending Youtube videos from different countries to form visual statistics of which category attracts the most attention.
+    The application also helps in understanding the sentiments of viewers.
 </h2>
     <br/>
     <br/>
@@ -28,38 +28,21 @@
         }
     </style> 
     <div class="row">
-        <div class="col-sm-8" style="margin-left: 200px">
-            <div class="panel" align="center">
-                <div class="panel-body">
-                    <!-- <div class="dataset_icon" -->
-                    <a href="{{ url_for('countries_func') }}" class="link">
-                        <img src="/static/analysis.png" class="index-img" style="width:100%" alt="Image">
-                        <h2 class="middle description">Data Set Analysis</h2> 
-                        <!-- <div class="overlay">Data Set Analysis</div> -->
-                    </a>
-                </div>
-            </div>
+        <div class="col-sm-6" >
+            <a href="{{ url_for('countries_func') }}" class="link">
+                <img src="/static/analysis.png" class="index-img" style="width:100%" alt="Image">
+                <h2 class="middle description">Data Set Analysis</h2>
+            </a>
+        </div>
+        <div class="col-sm-6" >
+            <a href="{{ url_for('getIdForSentimentAnalysis_func') }}" class="link">
+                <img src="/static/sentimental.png" class="index-img" style="width:100%" alt="Image">
+                <h2 class="middle description">Sentimental Analysis</h2>
+            </a>
         </div>
     </div>
 
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-8" style="margin-left: 200px">
-            <div class="panel" align="center">
-                <div class="panel-body">
-                    <a href="{{ url_for('getIdForSentimentAnalysis_func') }}" class="link">
-                        <img src="/static/sentimental.png" class="index-img" style="width:100%" alt="Image">
-                        <h2 class="middle description">Sentimental Analysis</h2>
-                        
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <br><br>
 
 

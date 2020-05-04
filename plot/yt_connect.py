@@ -66,7 +66,6 @@ def process_comments(video_comment_threads):
         cleaned = re.sub(r'[^(a-zA-Z)\s]', '', str(comment))
 
         tokenized = word_tokenize(cleaned)
-        print(tokenized)
         stopped = [w for w in tokenized if not w in stop_words]
 
         pos = nltk.pos_tag(stopped)
@@ -80,15 +79,23 @@ def process_comments(video_comment_threads):
 def generate(video_id):
     youtube = get_authenticated_service(video_id)
     video_comment_threads = get_comment_threads(youtube, video_id, [])
-    # comments = process_comments(video_comment_threads)
+    comments = process_comments(video_comment_threads)
+
     sia = SentimentIntensityAnalyzer()
 
     pol_comments = []
     for c in video_comment_threads:
         score = sia.polarity_scores(c)['compound']
+        print((c,score))
         pol_comments.append((c, score))
+
+    adj_list = []
+    for i in comments:
+        s = sia.polarity_scores(i)['compound']
+        adj_list.append((i,s))
 
     # for comment in pol_comments:
     #     print(comment)
+    list = [pol_comments, adj_list]
 
-    return pol_comments
+    return list
