@@ -8,7 +8,7 @@ What's trending is intended to help Youtubers from different countries to visual
 
 
 ## **Technology Stack**
-Github, Flask, AWS, Docker, IBM Watson, Nginx, Machine Learning algorithm(NLTK Vader SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, HTML/CSS, Bootstrap
+Github, Flask, AWS, Docker, Nginx, Youtube Data API v3, Machine Learning algorithm(NLTK Vader SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, HTML/CSS, Bootstrap
 
 
 ## **View website**
