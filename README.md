@@ -51,6 +51,7 @@ docker run -p 80:80 myapp
 1. Go to [Google Cloud Console](https://console.cloud.google.com) and create a new project. 
 2. Enable the YouTube Data API v3.
 3. Create credentials (OAuth client ID, Application Type: Other) and download them to `client_secrets.json`.
+4. Place the downloaded `client_secrets.json` under the main package WhatsTrendingApp
 
 ## **References:**
 1. [Modify & Redeploy Cloud Foundry App](https://cloud.ibm.com/docs/starters?topic=starters-download-modify-and-redeploy-your-cloud-foundry-app-with-the-command-line-interface)
