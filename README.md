@@ -11,6 +11,14 @@ What's trending is intended to help Youtubers from different countries to visual
 Github, Flask, AWS, Docker, IBM Watson, Nginx, Machine Learning algorithm(NLTK Vader SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, HTML/CSS, Bootstrap
 
 
+## **View website**
+The docker daemon is running the website on the AWS EC2 Instance. The webpage will be viewable at the Elastic IP 52.88.197.158:80 
+```
+52.88.197.158:80
+```
+
+# **Notes for Team Members**
+
 ## **Set up virtual environment**
 This contains all the packages and dependencies used. 
 ```
@@ -21,14 +29,6 @@ venv\Scripts\activate
 If you don't need view website on localhost anymore, deactivate the virtual environment. 
 ```
 deactivate
-```
-
-
-## **View website**
-Now that the virtual environment is activated, you can run view the website on localhost:5000. 
-```
-python3 main.py
-python main.py
 ```
 
 ## Build & Run Docker Image 
@@ -63,3 +63,5 @@ docker run -p 80:80 myapp
 ## **References:**
 1. [Modify & Redeploy Cloud Foundry App](https://cloud.ibm.com/docs/starters?topic=starters-download-modify-and-redeploy-your-cloud-foundry-app-with-the-command-line-interface)
 2. [Johnafish/senticomment](https://github.com/johnafish/senticomment)
+3. [Webpage Icons](https://www.flaticon.com/packs/survey-feedback-2)
+4. [uWSGI-Nginx-Flask Docker Image](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/)
