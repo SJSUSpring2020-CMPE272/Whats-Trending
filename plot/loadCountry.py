@@ -18,34 +18,34 @@ def getCountryData(country):
 def getCategoryDesc(country):
     description = ''
     if (country == "US"):
-        description = 'Videos of category Entertainment are the most trending in US'
+        description = 'Videos of category Entertainment are the most trending in United States'
     elif (country == "CA"):
-        description = 'Videos of category Entertainment are the most trending in CA'
+        description = 'Videos of category Entertainment are the most trending in Canada'
     elif (country == "UK"):
-        description = 'Videos of category Music are the most trending in UK'
+        description = 'Videos of category Music are the most trending in United Kingdom'
     elif (country == "FR"):
-        description = 'Videos of category Entertainment are the most trending in FR'
+        description = 'Videos of category Entertainment are the most trending in France'
     elif (country == "DE"):
-        description = 'Videos of category Entertainment are the most trending in DE'
+        description = 'Videos of category Entertainment are the most trending in Germany'
     elif (country == "MX"):
-        description = 'Videos of category Entertainment are the most trending in MX'
+        description = 'Videos of category Entertainment are the most trending in Mexico'
     return description
 
 
 def getPublishHour(country):
     description = ''
     if (country == "US"):
-        description = 'Videos published at 4:00PM hour are the most trending in US'
+        description = 'Majority of the trending videos have been published at 3:00PM in United States'
     elif (country == "CA"):
-        description = 'Videos published at 4:00PM are the most trending in CA'
+        description = 'Majority of the trending videos have been published at 4:00PM in Canada'
     elif (country == "UK"):
-        description = 'Videos published at 5:00PM are the most trending in UK'
+        description = 'Majority of the trending videos have been published at 5:00PM in United Kingdom'
     elif (country == "FR"):
-        description = 'Videos published at 4:00PM are the most trending in FR'
+        description = 'Majority of the trending videos have been published at 4:00PM in France'
     elif (country == "DE"):
-        description = 'Videos published at 5:00PM are the most trending in DE'
+        description = 'Majority of the trending videos have been published at 5:00PM in Germany'
     elif (country == "MX"):
-        description = 'Videos published at 5:00PM are the most trending in MX'
+        description = 'Majority of the trending videos have been published at 2:00AM in Mexico'
     return description
 
 

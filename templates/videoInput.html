@@ -2,6 +2,17 @@
 {% extends "base.html" %}
 {% block content %}
 
+
+    <div class="container">
+    <h2 align="center" class="description">
+        We perform a sentiment analysis of the video id given as input based on the comments given by viewers for the video
+        and give a graphical illustration of how much of the reaction the video generates is positive, negative or neutral.
+    </h2>
+    </div>
+    <br/><br/><br/>
+    <br/><br/><br/>
+
+
     <div class="container">
         <style>
             @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
@@ -10,24 +21,26 @@
             }
         </style>
         <div align="center">
-            <h1 class="description">View the sentimental analysis of a video</h1>
+            <h1 class="description">Enter a video id</h1>
         </div>
     </div>
     <br/>
     <br/>
-    <br/>
+{#    <br/>#}
+{#    <br/>#}
+{#    <br/>#}
     <div class="container text-center">
         <div class="row">
             <div class="col-sm-8" style="margin-left: 200px">
-                <h3>
+                <h2>
                     <form action="{{ url_for('sentimentAnalysis')}}" method="post">
                           <div class="form-group">
                             <label class="description" for="videoid">Video Id:</label>
                             <input type="text" name="videoId" class="form-control" placeholder="Enter youtube video id" id="videoid">
                           </div>
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-primary" style="height: 30px;width: 10%;font-size: small">Submit</button>
                     </form>
-                </h3>
+                </h2>
 
             </div>
         </div>
