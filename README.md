@@ -1,6 +1,5 @@
 # **What's Trending?**
-## **Description**
-#### **Abstract:** 
+## **Abstract**
 What's trending is intended to help Youtubers from different countries to visualize what type of content is the most popular in their country. Our team will acquire data from the top trending Youtube videos from different countries to form visual statistics of the popular video categories, popular video tags and favorable hours to publish videos. Our team will also build a webpage where the user can provide a video id as input and can get to know the polarity of the video. A sentiment analysis is performed at the back end based on the video comments, so the youtubers can create contents more responsibly without being offensive to anyone. <br>
 Technology stack: Flask, AWS, Machine Learning algorithm(NLTK Vader SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, HTML/CSS, Bootstrap
 
