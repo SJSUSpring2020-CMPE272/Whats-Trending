@@ -5,6 +5,10 @@ What's trending is intended to help Youtubers from different countries to visual
 Technology stack: Flask, AWS, Machine Learning algorithm(NLTK Vader SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, HTML/CSS, Bootstrap
 
 
+## **Architecture Diagram**
+![Architecture Diagram](https://github.com/SJSUSpring2020-CMPE272/Whats-Trending/blob/develop/Final%20Architecture.png)
+
+
 ## **Set up virtual environment**
 This contains all the packages and dependencies used. 
 ```
