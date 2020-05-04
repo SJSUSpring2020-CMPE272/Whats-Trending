@@ -1,12 +1,14 @@
 # **What's Trending?**
 ## **Abstract**
-What's trending is intended to help Youtubers from different countries to visualize what type of video content is the most popular in their country. Our team acquired data from the top trending Youtube videos from different countries and formed visual statistics of popular video categories, popular video tags and favorable hours to publish videos. Our team has built a webpage where the user can provide a video id as input and can get to know the polarity of the video. The polarity is identified by performing sentiment analysis on the video comments at the back end. The youtubers can make use of this information to create video contents more responsibly, without being offensive to anyone.
-
-Technology stack: Flask, AWS, Machine Learning algorithm(NLTK Vader SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, HTML/CSS, Bootstrap
+What's trending is intended to help Youtubers from different countries to visualize what type of video content is the most popular in their country. Our team acquired data from the top trending Youtube videos from different countries and formed visual statistics of popular video categories, popular video tags and favorable hours to publish videos. Our team has built a webpage where the user can provide a video id as input and can get to know the polarity of the video. The polarity is identified by performing sentiment analysis on the video comments at the back end. The youtubers can make use of this information to create video contents with more awareness of the audience's interests.
 
 
 ## **Architecture Diagram**
 ![Architecture Diagram](https://github.com/SJSUSpring2020-CMPE272/Whats-Trending/blob/develop/Final%20Architecture.png)
+
+
+## **Technology Stack**
+Github, Flask, AWS, Docker, IBM Watson, Nginx, Machine Learning algorithm(NLTK Vader SentimentIntensityAnalyzer), Python, Matplotlib, Seaborn, HTML/CSS, Bootstrap
 
 
 ## **Set up virtual environment**
