@@ -12,7 +12,7 @@ def getCountryData(country):
     elif (country == "DE"):
         return pd.read_csv("./transformed/DE_trending_videos.csv")
     elif (country == "MX"):
-        return pd.read_csv("./dataset/MX_trending1.csv")
+        return pd.read_csv("./transformed/MX_trending_videos.csv")
 
 
 def getCategoryDesc(country):
