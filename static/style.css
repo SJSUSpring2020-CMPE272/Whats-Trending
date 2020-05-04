@@ -82,6 +82,12 @@ div.plots-hrs .mpld3-yaxis .tick, div.plots-tags .mpld3-yaxis .tick{
   margin: auto; 
 }
 
+.form-control{
+  margin-left: 270px;
+  height: 30px;
+  width: 25%;
+}
+
 #dataset_icon {
   width: 250px; 
   height: auto; 
