@@ -39,7 +39,10 @@
     {% if graph %}
     <div class="container" align="center">
         <div class="plots-{{graph[0][1]}}">
-            {{graph[0][0] |safe}}
+            <h2 class="description" style="margin-top: 70px">The result of the sentimental analysis is below</h2>
+            {{graph[0][0][0] |safe}}
+            <h2 class="description" style="margin-top: 70px; margin-bottom: -200px">Commonly used adjectives in the comments</h2>
+            {{graph[0][0][1] |safe}}
         </div>
     </div>
     {% endif %}
