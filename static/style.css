@@ -45,11 +45,11 @@ div.plots-hrs .mpld3-yaxis .tick, div.plots-tags .mpld3-yaxis .tick{
   text-align: center;
 }
 
-.container:hover .index-img {
+.col-sm-6:hover .index-img {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.col-sm-6:hover .middle {
   opacity: 1;
 }
 
