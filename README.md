@@ -51,5 +51,11 @@ means host's port and the right value is the container's port. By default, the c
 docker run -p 80:80 myapp
 ```
 
-## **Resources**
-[Modify & Redeploy Cloud Foundry App](https://cloud.ibm.com/docs/starters?topic=starters-download-modify-and-redeploy-your-cloud-foundry-app-with-the-command-line-interface)
+## To get the client_secrets.json
+1. Go to [Google Cloud Console](https://console.cloud.google.com) and create a new project. 
+2. Enable the YouTube Data API v3.
+3. Create credentials (OAuth client ID, Application Type: Other) and download them to `client_secrets.json`.
+
+## **References:**
+1. [Modify & Redeploy Cloud Foundry App](https://cloud.ibm.com/docs/starters?topic=starters-download-modify-and-redeploy-your-cloud-foundry-app-with-the-command-line-interface)
+2. [Johnafish/senticomment](https://github.com/johnafish/senticomment)
