@@ -54,6 +54,8 @@ means host's port and the right value is the container's port. By default, the c
 docker run -p 80:80 myapp
 ```
 
+The docker image is also available on our [Docker Hub](https://hub.docker.com/repository/docker/lindatvy/whatstrendingapp).
+
 ## To get the client_secrets.json
 1. Go to [Google Cloud Console](https://console.cloud.google.com) and create a new project. 
 2. Enable the YouTube Data API v3.
