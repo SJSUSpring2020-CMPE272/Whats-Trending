@@ -1,6 +1,36 @@
 # **What's Trending?**
 ## **Abstract**
-What's trending is intended to help Youtubers from different countries to visualize what type of video content is the most popular in their country. Our team acquired data from the top trending Youtube videos from different countries and formed visual statistics of popular video categories, popular video tags and favorable hours to publish videos. Our team has built a webpage where the user can provide a video id as input and can get to know the polarity of the video. The polarity is identified by performing sentiment analysis on the video comments at the back end. The youtubers can make use of this information to create video contents with more awareness of the audience's interests.
+What's trending is intended to help Youtubers from different countries to visualize what type of video content is the most popular in their country. Our team acquired data from the top trending YouTube videos from different countries and formed visual statistics of popular video categories, popular video tags, favorable hours to publish videos and relevance between number of tags and trending level. Users can make use of this information to make their YouTube videos trend in a country.
+
+This application has an added functionality that projects the sentiment of a video based on the viewer comments. User can use this sentimental analysis result to find out how exactly is the video received by the viewers. This information will be helpful to the youtubers to create contents in a more responsible way.
+
+## **Practical scenarios on how this tool can be used:**
+
+**Use case 1:** A user based in USA wants to create a YouTube video and make it trend.
+
+Based on the statistics projected in US trending videos page, the user can infer the following:
+•	Creating an Entertainment specific contents has higher chance of making their video trend in YouTube.
+•	The user should publish the video around 4 – 5 PM to get more views.
+•	There is no significant relation found between the number of tags and the video becoming popular. So, the user can use any number of tags related to their video content.
+•	Suggested tags to trend the video - #FoodASMR, #breaking, #movies etc.
+
+
+**Use case 2:** A youtuber saw a trending video of a man mocking specially challenged people. The user finds the video funny and wants to create similar contents and make it trend. 
+
+•	Sentiment Analysis report:
+More than half of the viewers (54%) found the video to be very offensive to specially challenged people and not funny. So, the youtuber can possibly avoid posting such objectionable contents.
+
+•	Negativity projected in the comments: 
+insensitive, obnoxious, unacceptable, mad, awful, harassment etc.,
+
+
+**Use case 3:** A YouTube viewer wants to see how people felt after the latest coronavirus update provided by New York state Governor
+
+•	Sentiment Analysis report:
+People were having mixed emotions – 35% of the people were staying positive and 42% were losing hopes.
+
+•	Emotions projected in the comments: 
+Good, aggressive, vulnerable, responsible, careful, healthy,  etc.
 
 
 ## **Architecture Diagram**
