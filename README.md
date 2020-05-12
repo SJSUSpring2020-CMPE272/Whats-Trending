@@ -6,7 +6,8 @@ This application has an added functionality that projects the sentiment of a vid
 
 ## **Practical scenarios on how this tool can be used:**
 
-**Use case 1:** A user based in USA wants to create a YouTube video and make it trend.
+### **Use case 1:** 
+A user based in USA wants to create a YouTube video and make it trend.
 
 Based on the statistics projected in US trending videos page, the user can infer the following:<br>
 •	 Creating an Entertainment specific contents has higher chance of making their video trend in YouTube.<br>
@@ -14,8 +15,8 @@ Based on the statistics projected in US trending videos page, the user can infer
 •	 There is no significant relation found between the number of tags and the video becoming popular. So, the user can use any number of tags related to their video content.<br>
 •	 Suggested tags to trend the video - #FoodASMR, #breaking, #movies etc.
 
-
-**Use case 2:** A youtuber saw a trending video of a man mocking specially challenged people. The user finds the video funny and wants to create similar contents and make it trend. 
+### **Use case 2:**
+A youtuber saw a trending video of a man mocking specially challenged people. The user finds the video funny and wants to create similar contents and make it trend. 
 
 **Sentiment Analysis report:**
 More than half of the viewers (54%) found the video to be very offensive to specially challenged people and not funny. So, the youtuber can possibly avoid posting such objectionable contents.
@@ -24,7 +25,8 @@ More than half of the viewers (54%) found the video to be very offensive to spec
 insensitive, obnoxious, unacceptable, mad, awful, harassment etc.,
 
 
-**Use case 3:** A YouTube viewer wants to see how people felt after the latest coronavirus update provided by New York state Governor
+### **Use case 3:**
+A YouTube viewer wants to see how people felt after the latest coronavirus update provided by New York state Governor
 
 **Sentiment Analysis report:**
 People were having mixed emotions – 35% of the people were staying positive and 42% were losing hopes.
